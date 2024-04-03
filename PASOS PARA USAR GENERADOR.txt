@@ -1,0 +1,46 @@
+****************PASOS PARA USAR GENERADOR******************
+
+1. Al momento de ejecutarlo se abrirá panel con 4 casillas 
+para rellenar. En la primera colocar la "ruta de la carpeta
+del proyecto Laravel".Para que te genere todos los archivos
+en su ruta que deben ir.
+
+2. En la segunda casilla vas a colocar el "nombre de tu 
+tabla de Base de Datos" en singular y preferiblemente en 
+inglés, según documentacion Laravel.
+
+3. En la tercera casilla simplemente vas a pegar el codigo sql
+de la tabla de Proveedores:
+
+CREATE TABLE PROVEEDOR
+(
+  RUC Varchar(12) NOT NULL,
+  RAZONSOCIAL Varchar(256),
+  DIASCREDITO Integer,
+  CODCUENTA Varchar(18),
+  LIMITECREDITO Numeric(16,6),
+  CUENTABANCARIA Varchar(64),
+  SERIE Varchar(6),
+  DIRECCION Varchar(128),
+  EMAIL Varchar(36),
+  TELEFONO Varchar(16),
+  CONTACTO Varchar(64),
+  FECHA Date,
+  PRIMARY KEY (RUC)
+);
+
+4. En la cuarta casilla debes pegar tu codigo actual de web.php,
+este colocara la clase en el emcabezado y las rutas listas dentro
+de una funcion 'auth' en un .txt alojado en el escritorio.Reemplazas
+el contenido de tu web.php con eso.
+
+5. La ultima opcion te va generar el fragmento de archivo adminlte.php
+para la opcion de Registrar Proveedores y Listar Proveedores.
+
+
+******CORRECCIÓN MANUAL******* 
+
+El programa te va generar 6 archivos listo en su ubicacion que deben
+ir (migracion, modelo, controlador; carpeta con create.blade, edit.blade
+y index.blade). En todos ellos debes comentarizar o eliminar las filas
+que mencionen al 'CREATE' y 'PRIMARY' que son datos que no sirven.

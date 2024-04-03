@@ -1,0 +1,7 @@
+-Descomprimir rar migraciones y encontraras carpeta tests
+-lo pegas dentro del proyecto al mismo nivel de las carpetas
+-Estaran en esa carpeta
+-En el Terminal ejecutas los comando respectivamente: 
+	php artisan migrate --database mysql_test
+	//si no tiene creado db le das a (yes)//
+	php artisan test
